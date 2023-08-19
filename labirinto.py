@@ -1,10 +1,11 @@
-#labirinto.py
+from collections import deque
 
 from random import randint
 
 livre = ' '
 ocupado = '#'
 parede  = '#'
+andou = '@'
 
 linhas = 7
 colunas = 15
@@ -27,10 +28,38 @@ def gera_lab(m,n):
 	lab[fim[0]][fim[1]] = livre
 	return lab
 
+def eh_possivel_sair(lab):
+    fila = deque([inicio])
+    visitados = set()
+
+    while fila:
+        celula_atual = fila.popleft()
+        if celula_atual == fim:
+            return True
+
+        visitados.add(celula_atual)
+
+        linha, coluna = celula_atual
+        vizinhos = [(linha-1, coluna), (linha+1, coluna), (linha, coluna-1), (linha, coluna+1)]
+
+        for vizinho in vizinhos:
+            linha_vizinho, coluna_vizinho = vizinho
+            if 0 <= linha_vizinho < len(lab) and 0 <= coluna_vizinho < len(lab[0]) and lab[linha_vizinho][coluna_vizinho] == livre and vizinho not in visitados:
+                fila.append(vizinho)
+
+    return False
+
+
 def print_lab(lab):
 	for i in lab:
 		print("".join(i))
 
+
 if __name__ == '__main__':
-	l = gera_lab(linhas,colunas)
-	print_lab(l)
+    labirinto = gera_lab(linhas, colunas)
+    print_lab(labirinto)
+    
+    if eh_possivel_sair(labirinto):
+        print("É possível sair do labirinto.")
+    else:
+        print("Não é possível sair do labirinto.")
