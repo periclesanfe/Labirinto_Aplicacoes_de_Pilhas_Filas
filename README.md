@@ -1,20 +1,27 @@
 # Labirinto_Aplicacoes_de_Pilhas_Filas
-### Miniprojeto de utilização de pilhas/filas
-#### PROPOSTA:
-<p text_align="center" justify_content="center">
-Escreva uma função <b>eh_possivel_sair()</b> que retorna True se houver um caminho de saída do labirinto, False caso contrário. </br>
-A função foi criada utilizando conceito de Deques do python, importanto da biblioteca nativa <b>Collections</b>, criada uma fila de casas que já passou, uma verificação da possibilidade de se mover para cada um dos lados e por fim, retornar na função se possível ou não.</br>
-</p>
-<p>O trabalho foi desenvolvido com base nos nossos conhecimentos obtidos em sala de aula sobre Tipos Abstratos de Dados (listas, pilhas, filas) e ainda, com base em análise em uma coleção nativa do Python, como o Deque, que foi utilizada em nosso código para aprimorar a funcionalidade dele, deixando-o efetivo! 
-Ainda, analisamos também um projeto semelhante, com respostas no site conhecido no ambiente de Programação, o StackOverflow.
-</p>
-<p>PARTICIPANTES:</p>
-André Filipe Gomes Rocha / https://github.com/Andrefgr24 <br>
-Péricles Andrade Feitoza / https://github.com/periclesanfe
-<p></p>
 
-<p>REFERÊNCIAS:</p>
-https://pt.stackoverflow.com/questions/70101/como-funciona-este-c%C3%B3digo-que-gera-um-labirinto -> Código que usamos como base.
-https://docs.python.org/3/library/collections.html -> Site que lista aplicação de algumas coleções, entre elas, "deque".
+## Objetivo
+Colocar em prática os conceitos aprendidos sobre listas encadeadas numa aplicação em Python. Um miniprojeto da matéria Estrutura de Dados.
 
+## Problema
+
+Considere um labirinto representado por uma matriz m × n. O caminho livre é marcado na matriz com " " (sem aspas),
+enquanto os caminhos ocupados são marcados com "#" (sem aspas).
+O ratinho está na posição (livre) (1, 0) e quer chegar à posição (livre) (m − 2, n − 1) passando pelo labirinto.
+
+<b>COMENTÁRIOS:</b>
+
+* Tivemos dificuldade em entender os objetivos e criar mentalmente o funcionamento do problema, para depois estruturar uma resolução e construir um código.
+* A construção do código não foi muito dificil, já que utilizamos uma biblioteca pré-pronta.
+* A explicação que achamos no StackOverflow ajudou bastante no entendimento do algoritimo base e pricipalmente a achar uma resolução, sem o artigo, não utilizariamos o Deque, construiriamos um algoritmo do zero, baseado nos algorítmos de aula.
+
+<b>PARTICIPANTES:</b>
+
+* André Filipe Gomes Rocha / https://github.com/Andrefgr24
+* Péricles Andrade Feitoza / https://github.com/periclesanfe
+
+
+<b>REFERÊNCIAS:</b>
+
+No código, além dos conhecimentos adquiridos durante as aulas, utilizamos o tópico: ["Como funciona esse código que gera um labirinto?"](https://pt.stackoverflow.com/questions/70101/como-funciona-este-c%C3%B3digo-que-gera-um-labirinto) como base uma resolução de um problema parecido que encontramos no StackOverflow que falava sobre o funcionamento de um algorítmo de labiritinto. Na resolução da pergunta, o usuário Marcelo Gibson respondeu a respeito de algorítimos pré prontos do python, e decidimos por utilizar o código de Deques, presente na biblioteca [Collections](https://docs.python.org/3/library/collections.html) nativa do python.
 
