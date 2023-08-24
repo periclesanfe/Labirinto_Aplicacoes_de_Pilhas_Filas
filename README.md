@@ -11,7 +11,9 @@ Ainda, analisamos também um projeto semelhante, com respostas no site conhecido
 <p>PARTICIPANTES:</p>
 André Filipe Gomes Rocha / https://github.com/Andrefgr24 <br>
 Péricles Andrade Feitoza / https://github.com/periclesanfe
-<p>REFERÊNCIAS</p>
+<p></p>
+
+<p>REFERÊNCIAS:</p>
 https://pt.stackoverflow.com/questions/70101/como-funciona-este-c%C3%B3digo-que-gera-um-labirinto -> Código que usamos como base.
 https://docs.python.org/3/library/collections.html -> Site que lista aplicação de algumas coleções, entre elas, "deque".
 
