@@ -60,6 +60,7 @@ if __name__ == '__main__':
     print_lab(labirinto)
     
     if eh_possivel_sair(labirinto):
-        print("É possível sair do labirinto.")
+        print("True")
     else:
-        print("Não é possível sair do labirinto.")
+        print("False")
+ 
