@@ -17,6 +17,7 @@ O ratinho está na posição (livre) (1, 0) e quer chegar à posição (livre) (
 
 <b>PARTICIPANTES:</b>
 
+* Antônio Alan Oliveira Farias / https://github.com/farias-alan
 * André Filipe Gomes Rocha / https://github.com/Andrefgr24
 * Péricles Andrade Feitoza / https://github.com/periclesanfe
 
